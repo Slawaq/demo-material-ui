@@ -16,7 +16,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loaders: ["babel?optional[]=runtime&stage=0&sourceMaps=both"],
             },{
                 test: /\.html$/,
                 loader: "file?name=[name].[ext]",
